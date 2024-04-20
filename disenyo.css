@@ -1,0 +1,135 @@
+:root {
+    --lightblack: rgb(19, 19, 19);
+    --white: white;
+    --lightblue: rgb(38, 84, 211);
+    --transparentwhite: rgba(255, 255, 255, 0.733);
+    --fonts: Arial, Helvetica, sans-serif;
+    --fontstyle: italic;
+}
+
+body {
+    background-image: url(BackGroundImage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: var(--fonts);
+    margin: 5px;
+    padding: 20px;
+    border: 2px solid var(--white);
+}
+.header {
+    text-align: center;
+}
+.header h1 {
+    padding: 0;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bolder;
+    color: var(--white);
+}
+.header img {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    transition: .5s;
+}
+.header img:hover {
+    border: 2px solid rgba(0, 0, 0, 0.356);
+}
+.header h2 {
+    margin-top: 5px;
+    padding: 0;
+}
+.header h2 a {
+    text-decoration: none;
+    padding: 3px;
+    color: var(--white);
+    transition: .5s;
+}
+.header h2 a:hover {
+    background-image: radial-gradient(circle at center, transparent 0%, transparent 0%, rgb(133, 247, 255) 100%);
+    color: var(--lightblue);
+    border: 2px solid var(--lightblue);
+    background-color: var(--white);
+    border-radius: 8px;
+}
+.self-intro h3 {
+    padding: 2px;
+    font-family: var(--fonts);
+    color: var(--lightblue);
+    background-color: var(--transparentwhite);
+    padding-left: 5px;
+    font-style: var(--fontstyle);
+}
+.self-intro p {
+    color: var(--lightblack);
+    text-align: justify;
+}
+
+.educ-background h4 {
+    padding: 0;
+    margin: 0;
+}
+.educ-background table {
+    border-collapse: collapse;
+    border: 1px solid var(--lightblack);
+    width: 100%;
+}
+.educ-background thead tr th{
+    padding: 8px;
+    border: 1px solid var(--lightblack);
+}
+.educ-background table thead tr th{
+    color: var(--lightblue);
+    text-align: center;
+    background-color: var(--transparentwhite);
+}
+.educ-background tbody tr td{
+    padding: 8px;
+    border: 1px solid var(--lightblack);
+}
+.educ-background tbody tr td.level {
+    font-weight: bold;
+}
+.expertise h3 {
+    background-color: var(--transparentwhite);
+    color: var(--lightblue);
+    padding: 2px;
+    font-style: var(--fontstyle);
+    font-weight: bolder;
+}
+.expertise ul li {
+    list-style-type: square;
+    color: var(--lightblack);
+}
+.bg-info-tech h4{
+    font-style: var(--fontstyle);
+    font-weight: bolder;
+    background-color: var(--transparentwhite);
+    color: var(--lightblue);
+    padding: 3px;
+    margin: 0;
+}
+.bg-info-tech p {
+    text-align: justify;
+    color: var(--lightblack);
+}
+.app-used-in-study h4 {
+    font-style: var(--fontstyle);
+    background-color: var(--transparentwhite);
+    color: var(--lightblue);
+    padding: 3px;
+    margin: 0;
+}
+.app-used-in-study ol {
+    text-align: left;
+}
+.app-used-in-study ol li {
+    text-align: left;
+    color: var(--lightblack);
+}
