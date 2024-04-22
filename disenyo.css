@@ -75,10 +75,19 @@ body {
     padding: 0;
     margin: 0;
 }
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 600px) {
+    .educ-background thead tr th,
+    .educ-background tbody tr td {
+        font-size: 12px; /* Decrease font size on smaller screens */
+        padding: 6px; /* Adjust padding for better spacing on smaller screens */
+    }
+}
 .educ-background table {
     border-collapse: collapse;
     border: 1px solid var(--lightblack);
     width: 100%;
+    overflow-x: auto; /* Enable horizontal scrolling on small screens */
 }
 .educ-background thead tr th{
     padding: 8px;
